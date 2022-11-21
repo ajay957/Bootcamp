@@ -12,7 +12,13 @@ public class Calculator {
         return a*b;
     }
     public int div(int a,int b){
-        return a/b;
+        try {
+            return a / b;
+        }
+        catch (Exception e){
+            System.out.println("exception occurred");
+        }
+        return 0;
     }
 
     public static void main(String[] args) {
@@ -25,11 +31,11 @@ public class Calculator {
             System.out.println("3.multiplication");
             System.out.println("4.division");
             System.out.println("5.exit");
-            System.out.println("enter your choice");
+            System.out.println("enter your choice:");
             int s=sc.nextInt();
-            System.out.println("enter first number");
+            System.out.println("enter first number:");
             int a=sc.nextInt();
-            System.out.println("enter second number");
+            System.out.println("enter second number:");
             int b=sc.nextInt();
             switch (s){
                 case 1:
@@ -45,7 +51,7 @@ public class Calculator {
                     System.out.println(x.div(a,b));
                     break;
                 default:
-                    System.out.println("enter a vaild number");
+                    System.out.println("enter a valid number");
             }
             System.out.println("do you want to continue 1.yes 2.no");
             i=sc.nextInt();
