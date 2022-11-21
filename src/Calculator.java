@@ -1,6 +1,12 @@
-public class Calculator {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
+public class Calculator {
+    public int add(int a,int b) {
+        return a + b;
+    }
+
 
     }
-}
+
+
+
